@@ -15,7 +15,7 @@ def index():
         weather_data = get_weather(city)
         weather_data_hourly = get_hourly_forecast(city)
 
-        return render_template('index.html',weather_data=weather_data_hourly)
+        return render_template('index.html',weather_data=weather_data)
     else:
         return render_template('index.html')
 
